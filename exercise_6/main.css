@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,12 +9,13 @@ html {
     background-color: #f4f4f4;
 }
 
-input, textarea {
+input, textarea, select {
     outline: none;
     border: 1px solid #ccc;
     padding: 8px 10px;
     border-radius: 4px;
     font-size: 16px;
+    color: #847373;
 }
 
 .wrap {
@@ -24,8 +25,6 @@ input, textarea {
 
 .main {
     font-size: 1.8rem;
-    height: 100vh;
-    overflow-y: hidden;
 }
 
 h1 {
@@ -104,16 +103,17 @@ input[type=radio], input[type=checkox] {
     width: 22%;
     border: 1px solid #ccc;
     margin-right: 10px;
-    background-color: white;
 }
 
 .day i, .month i, .year i {
     margin-right: 10px;
 }
 
-.day input, .month input, .year input {
-    width: 80%;
+.day select, .month select, .year select {
+    width: 100%;
+    padding: 8px 10px;
     border: none;
+    /* background-color: white; */
 }
 
 .password input,
@@ -138,6 +138,7 @@ input[type=radio], input[type=checkox] {
     margin-top: 30px;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .action button {
@@ -208,10 +209,6 @@ input[type=radio], input[type=checkox] {
 
     .date label {
         margin-bottom: 10px;
-    }
-
-    .action {
-        padding-bottom: 30px;
     }
 
 }

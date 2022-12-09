@@ -186,7 +186,7 @@ input[type=radio], input[type=checkox] {
     }
 
     .name, .password, .confirm,
-    .email, .message, .date {
+    .email, .message, .date, .sex {
         flex-direction: column;
         align-items: flex-start;
     }

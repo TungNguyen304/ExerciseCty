@@ -3,7 +3,7 @@
     --height_navbar: 8rem;
     --height_banner: 8rem;
     --height_footer: 10rem;
-    --width_logo: 30rem;
+    --width_logo: 26rem;
     --width_action: 30rem;
 }
 
@@ -99,22 +99,32 @@ footer {
 }
 
 
-@media (max-width : 1024px) {
+@media (max-width : 768px) {
     header {
+        flex-direction: column;
+    } 
+
+    .header__logo {
+        width: 100%;
+    }
+
+    .content {
         flex-direction: column;
     }
 
-    .header__action {
+    aside {
         width: 100%;
     }
 }
+
+
 
 @media (max-width : 640px) {
     .header__wrap {
         flex-direction: column;
     }
 
-    .header__logo {
+    .header__action {
         width: 100%;
     }
 
@@ -126,11 +136,5 @@ footer {
         width: 100%;
     }
 
-    .content {
-        flex-direction: column;
-    }
-
-    aside {
-        width: 100%;
-    }
+    
 }

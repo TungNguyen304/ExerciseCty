@@ -21,7 +21,7 @@ section {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 5px;
 }
 
@@ -34,7 +34,7 @@ section>div {
     display: flex;
     align-items: center;
     flex: 1;
-    height: 120px;
+    padding-bottom: 20px;
 }
 
 .img__sml {
@@ -82,12 +82,21 @@ section>div {
 
     .img__lrg {
         width: 100%;
-        margin: 0 10px;
         border-radius: 6px;
         margin-bottom: 10px;
     }
 
     .wrap {
         width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .wrap__content {
+        flex-direction: column;
+    }
+
+    .img__sml {
+        margin-bottom: 10px;
     }
 }

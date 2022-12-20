@@ -207,8 +207,12 @@ input[type=radio], input[type=checkox] {
         margin-bottom: 10px;
     }
 
-    .date label {
-        margin-bottom: 10px;
+    .sex div label{
+        margin-bottom: 0;
+    }
+
+    label {
+        margin-bottom: 8px;
     }
 
 }
